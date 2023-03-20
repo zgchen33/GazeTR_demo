@@ -1,0 +1,7 @@
+1. !!!!!!!!!!!!!!!!  opencv_python should match with python version(like "opencv...cp36" with python3.6)
+    otherwise will have the problem like "o“Cannot find reference ‘imread‘ in ‘__init__.py | __init__.py‘ in opencv”
+2. vext and vext.gi could be able to work out only when your pygobject and etc. are installed in your system python.
+    problem: gdk could not be found.
+    you can search the official website for help: https://pygobject.readthedocs.io/en/latest/getting_started.html
+3. the operation about calibrate_camera should be noticed.
+4. gaze1(linear: 6->64), gaze2(linear: 64-> 3)

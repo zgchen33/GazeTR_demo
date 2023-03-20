@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GazeTR_main" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ext/HRNet-Facial-Landmark-Detection" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ext/eos" vcs="Git" />
+  </component>
+</project>

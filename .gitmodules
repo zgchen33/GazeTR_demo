@@ -1,0 +1,9 @@
+[submodule "GazeTR_main"]
+	path = GazeTR_main
+	url = https://github.com/yihuacheng/GazeTR.git
+[submodule "ext/HRNet-Facial-Landmark-Detection"]
+	path = ext/HRNet-Facial-Landmark-Detection
+	url = https://github.com/HRNet/HRNet-Facial-Landmark-Detection
+[submodule "ext/eos"]
+	path = ext/eos
+	url = https://github.com/patrikhuber/eos
