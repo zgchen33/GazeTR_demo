@@ -29,18 +29,18 @@ class monitor:
         self.w_pixels = default_screen.get_width()
 
     def monitor_to_camera(self, x_pixel, y_pixel):
-        # assumes in-build laptop camera, located centered and 10 mm above display
+        # assumes in-build laptop camera, located centered and 5 mm above display
         # update this function for you camera and monitor using: https://github.com/computer-vision/takahashi2012cvpr
         x_cam_mm = ((int(self.w_pixels / 2) - x_pixel) / self.w_pixels) * self.w_mm
-        y_cam_mm = 10.0 + (y_pixel / self.h_pixels) * self.h_mm
+        y_cam_mm = 5.0 + (y_pixel / self.h_pixels) * self.h_mm
         z_cam_mm = 0.0
 
         return x_cam_mm, y_cam_mm, z_cam_mm
 
     def camera_to_monitor(self, x_cam_mm, y_cam_mm):
-        # assumes in-build laptop camera, located centered and 10 mm above display
+        # assumes in-build laptop camera, located centered and 5 mm above display
         # update this function for you camera and monitor using: https://github.com/computer-vision/takahashi2012cvpr
         x_mon_pixel = np.ceil(int(self.w_pixels / 2) - x_cam_mm * self.w_pixels / self.w_mm)
-        y_mon_pixel = np.ceil((y_cam_mm - 10.0) * self.h_pixels / self.h_mm)
+        y_mon_pixel = np.ceil((y_cam_mm - 5.0) * self.h_pixels / self.h_mm)
 
         return x_mon_pixel, y_mon_pixel
