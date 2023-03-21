@@ -19,7 +19,8 @@ In addition, please download the pre-trained `GazeTR-H-ETH.pt` model for GazeTR 
 
 Also, please download the pre-trained `HR18-WFLW.pth` model for HRNet from [here](https://1drv.ms/u/s!AiWjZ1LamlxzdTsr_9QZCwJsn5U)
    and place it inside the folder:
-*Please note* that the Python Pip dependencies for the live demo (found under `/demo`) are different to the training/evaluation code of the network. You must install the additional dependencies. This is described in the next step.
+
+    mkdir ext/HRNet-Facial-Landmark-Detection/hrnetv2_pretrained
 
 b. Create a Python virtual environment:
 
@@ -55,11 +56,7 @@ b. Create a Python virtual environment:
 ### 3. Run demo
     python run_demo.py
 
-This will collect user calibration data (9-point by default) and fine-tune the gaze network with it. The calibration
-targets are the letter 'E' shown on a 3x3 grid on the screen in any of the 4 orientations: up, down, left or right.
-The user must press the corresponding arrow key to advance to the next calibration target, otherwise another randomly
-oriented target will be shown again at the same screen location. After calibration, the updated gaze network will be
-used to continuously compute the user's on-screen point-of-regard and shown on the display.
+Without calibration, the gaze network will be used to continuously compute the user's on-screen point-of-regard and shown on the display.
 
 ### Best practices:
 
