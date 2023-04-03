@@ -1,8 +1,17 @@
-## GazeTR Realtime Demo Instructions
+## GazeTR Real-time Demo Instructions
 
 ### 0. Introduction
 
-We provide a [GazeTR](https://github.com/yihuacheng/GazeTR) realtime demo that runs with live input from a webcam. And this demo is based on the demo of [few-shot-gaze](https://github.com/NVlabs/few_shot_gaze).
+We provide a GazeTR real-time demo that runs with live input from a webcam. And this demo is based on the demo of [few-shot-gaze](https://github.com/NVlabs/few_shot_gaze). 
+
+Additionally, we applied the  GazeTR real-time demo to eSports for a competitive level comparison display. 
+
+We used this demo to collect the gaze points of two players of different levels while observing League of Legends group battles. The positions of the heroes in the game were then marked, compared to the player's gaze points, and presented on the original video.
+
+![tester1](https://github.com/GazeTR_demo/raw/master/readme_images/tester1.gif)
+
+![tester2](https://github.com/GazeTR_demo/raw/master/readme_images/tester2.gif)
+
 ### 1. Setup
 
 This codebase should run on most standard Linux systems. It is tested with Ubuntu 20.04, pytorch v1.10.1, cuda v10.2, python v3.6.13.
@@ -45,7 +54,7 @@ b. Create a Python virtual environment:
    b. Calibrate your monitor's orientation and the position of its upper-left corner w.r.t. to the
    camera using the [Mirror-based Calibration](https://computer-vision.github.io/takahashi2012cvpr/) routine and
    update the methods `camera_to_monitor` and `monitor_to_camera` in `monitor.py` for your system appropriately.
-   
+
    If you don't use the [Mirror-based Calibration](https://computer-vision.github.io/takahashi2012cvpr/) routine to update some functions,
    we assume that your camera is in-built camera and is 5mm directly above the upper border of your monitor.
 
