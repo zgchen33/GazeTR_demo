@@ -8,9 +8,11 @@ Additionally, we applied the  GazeTR real-time demo to eSports for a competitive
 
 We used this demo to collect the gaze points of two players of different levels while observing League of Legends group battles. The positions of the heroes in the game were then marked, compared to the player's gaze points, and presented on the original video.
 
-![tester1](https://github.com/GazeTR_demo/raw/master/readme_images/tester1.gif)
+Below are two examples, the blue circles are the point of regard, the red circles are the heroes of the game, and the green circles are the relative groud truth.
 
-![tester2](https://github.com/GazeTR_demo/raw/master/readme_images/tester2.gif)
+![tester1](https://github.com/zgchen33/GazeTR_demo/raw/master/readme_images/tester1.gif)
+
+![tester2](https://github.com/zgchen33/GazeTR_demo/raw/master/readme_images/tester2.gif)
 
 ### 1. Setup
 
